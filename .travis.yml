@@ -13,7 +13,7 @@ env:
   - secure: cc9JDLKIl9GngguJKwbBPG1DfCR9b7Ph7OmgjU34Ml/3rUXaClYp0WP5ULT9vaFWR7ejXFlpfDuVnsOHv2xnEySwvc6TG2+jG3RWSbTA1iNlSotU1c+Wmo6bBNKNS21R7XnvxDHmNZmWNHQFQyWBaPjsNbHs1rnbOMux6Bxm2SXnCmTw2+O8zXiV38sPLBbxAQATgtHgNdL3jTv3FcjmFaBvzA/uVuPESRYyvUCn+hpBGFi9SCXRZdyyteEfDOcBkZYPZkyRnb8wauyVRuzCSlXtEFTYyUHbAdHX9qA9O5xKDcQLeEIEKemGJT4QIZmgv+EyvdTwbAbvTeLXjHyghHJXcM1/CoRMw96k07ThcKnRk/UsTQXqZmlm62nuR6rt2Gd5QPo+37b/r0PGdtDzWo6MEE4EYKKmT4lExWnOQQ5lsHrcixoGegVncf4r6ivjbsATDk+Bm8G5LhZ/dl0O2WPxUtsX4/U/IXIJDJ8cuuJIQITMVZzPG7YC+V+wg5bjmwwZTBb0Q6CRFzUEe8gvTidDZYxz+TEBtdlVsrwWwpaNQeGhRUfF59UinaCT00LFG6obq2brvRJ8/WeF9QEBYasFWr85r9A4BfqgrqJqsVExR554CaA0BpJcvrkKACquzpIlpGffvA+3XaF3jD113av+6n4XAuqfX+V/wXsTt6E=
 
 install:
-- ssh-keygen -t rsa -N "" -f ~/.ssh /id_rsa
+- ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa
 - lein pallet add-service aws aws-ec2 "$AWS_ACCESS_KEY" "$AWS_SECRET_KEY"
 
 script:
