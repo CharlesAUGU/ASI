@@ -18,6 +18,6 @@ install:
 - lein pallet add-service aws aws-ec2 "$AWS_ACCESS_KEY" "$AWS_SECRET_KEY"
 
 script:
-  - lein run || :
+  - timeout 20 lein run || /bin/true
 
 
