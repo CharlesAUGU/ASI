@@ -21,6 +21,7 @@
   (exec-script* "apt-get install -y unzip")
   (exec-script* "unzip -o wordpress-5.1.1.zip -d /var/www")
   (exec-script* "service  apache2 reload")
+  (exec-script* "exit")
   
 )
 (def antoine 
